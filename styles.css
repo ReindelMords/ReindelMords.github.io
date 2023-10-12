@@ -1,0 +1,125 @@
+ html,
+ body {
+     overflow: hidden;
+ }
+
+.navbar a:hover {
+    color: #FF5733;
+    transition: color 0.3s ease;
+}
+ .custom-navbar {
+     background-color: #333;
+     /* Replace with your desired color code */
+ }
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.navbar.shrink {
+    padding: 5px 0;
+    background-color: #fff;
+    /* Change to your desired color */
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover styles for the dropdown menu items */
+.navbar .dropdown-menu a:hover {
+    background-color: #FF4500;
+    color: #FFF;
+}
+
+.dropdown-menu a:hover {
+    color: #ff4500;
+}
+
+
+.section-title {
+    opacity: 0;
+    animation: fadeIn 1s ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.social-links a:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+.testi-item {
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* CSS for the intro animation */
+#intro-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b9051a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.intro-content {
+    animation: fadeOut 3s ease-in-out forwards;
+    text-align: center;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.testi-item.slide {
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
